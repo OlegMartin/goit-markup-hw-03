@@ -338,7 +338,7 @@ body {
 .flex-features {
   width: 370px;
   margin-right: 30px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .flex-features:nth-last-child(-n + 3) {
