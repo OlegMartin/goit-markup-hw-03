@@ -17,7 +17,16 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -27,12 +36,12 @@ body {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
 
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
 }
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -154,7 +163,8 @@ body {
 
 .section-tittle {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -253,23 +263,11 @@ body {
 }
 /* footer */
 .footer {
+  /* display: flex; */
+
   background: #2f303a;
 }
 
-/* addres */
-.addres {
-  display: flex;
-
-  margin-left: 0;
-}
-
-.footer .addres {
-  color: var(--primary-white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.74;
-  letter-spacing: 0.03em;
-}
 /* button */
 .button {
   font-family: roboto;
@@ -292,8 +290,9 @@ body {
 /* portfolio */
 
 .button.portfolio {
-  display: inline-block;
+  display: flex;
   margin-left: 9px;
+  margin-bottom: 50px;
   border-radius: 4px;
 
   color: var(--primery-text-color);
@@ -310,7 +309,7 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-.features .features-tittle {
+.features.features-tittle {
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -331,6 +330,9 @@ body {
 }
 
 .features-padding {
+  padding: 0;
+  margin: 0;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -351,4 +353,49 @@ body {
 
 .features-fotot {
   display: block;
+}
+
+.features-tittle {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.link-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.addres-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.link-addres {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.74;
+  letter-spacing: 0.03em;
+}
+
+.link-footer {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: var(--tittle-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.addres-footer .link-footer:hover,
+.addres-footer .link-footer:focus {
+  color: var(--accent-color);
 }
