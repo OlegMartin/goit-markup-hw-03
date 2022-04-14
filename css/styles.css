@@ -37,6 +37,18 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -211,8 +223,6 @@ p {
 .features-button {
   display: flex;
   justify-content: center;
-  padding: 0;
-  list-style: none;
 }
 
 .features {
@@ -254,7 +264,7 @@ p {
 
 /* Чем мы занимаемся */
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -356,7 +366,7 @@ p {
 
 .features-item {
   
-  padding: 30px 0 30px;
+  padding: 30px 24px;
 }
 
 .features-tittle {
@@ -370,6 +380,7 @@ p {
 .link-text {
   color: var(--tittle-text-color);
   font-weight: 400;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -413,11 +424,6 @@ p {
 .features-tittle {
   margin-bottom: 4px;
 }
-.link-text {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 }
 /* footer */
@@ -426,8 +432,7 @@ p {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: #2f303a;
 }
 
@@ -457,10 +462,7 @@ p {
   margin-bottom: 0;
 }
 
-.addres-footer {
-  margin: 0;
-  padding: 0;
-}
+
 
 .link-addres {
   display: flex;
