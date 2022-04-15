@@ -15,6 +15,7 @@
 body {
   color: var(--primery-text-color);
   font-family: roboto, sans-serif;
+  font-family: ralewey, sans-serif;
 }
 
 .visually-hidden {
@@ -272,6 +273,9 @@ img {
 
 .job-flex {
   margin-right: 30px;
+}
+.job-flex:last-child{
+  margin-right: 0;
 }
 
 /* team */
